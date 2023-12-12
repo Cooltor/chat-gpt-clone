@@ -25,6 +25,19 @@ body {
   justify-content: space-between;
 }
 
+.side-bar ul li {
+  list-style-type: none;
+  border: #444654 solid 0.5px;
+  border-radius: 5px;
+  padding: 15px 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.side-bar ul li:hover {
+  background-color: #444654;
+}
+
 button {
   border: solid 0.5px rgba(255, 255, 255, 0.5);
   background-color: transparent;

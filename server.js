@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const PORT = 8000;
+const PORT = process.env.PORT || 3000;
 
 import express from "express";
 import cors from "cors";
@@ -41,6 +41,6 @@ app.post("/completions", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT || 3000, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
